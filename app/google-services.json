@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "610668559604",
+    "firebase_url": "https://counsellingcella-1532338423365.firebaseio.com",
+    "project_id": "counsellingcella-1532338423365",
+    "storage_bucket": "counsellingcella-1532338423365.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610668559604:android:585e9817eccb3c45",
+        "android_client_info": {
+          "package_name": "com.ccelllnmiit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "610668559604-c7fgnmbe58ka216eftcuabrt7obd137k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ccelllnmiit",
+            "certificate_hash": "320158f61663f569e0510e49ec2eb45a26b17943"
+          }
+        },
+        {
+          "client_id": "610668559604-undb3g6u67ukuko4utoi8b8vnvfjb9b0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIMmHV1_lHGPUkhs6e4dYeHVDo0QfaFN0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "610668559604-le8heisbp830nj9ebtdll4hivvoefr49.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

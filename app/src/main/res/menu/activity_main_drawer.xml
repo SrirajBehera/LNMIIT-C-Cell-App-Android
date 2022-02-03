@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/menu_top">
+        <item android:id="@+id/bul_board"
+            android:title="Bulletin Board"
+            android:icon="@drawable/ic_bulletin"/>
+        <item android:id="@+id/imp_contacts"
+            android:title="Important Contacts"
+            android:icon="@drawable/ic_contact"/>
+        <item android:id="@+id/imp_links"
+            android:title="Important Links"
+            android:icon="@drawable/ic_link"/>
+    </group>
+    <group android:id="@+id/menu_middle">
+        <item android:id="@+id/bus"
+            android:title="Bus Time Table"
+            android:icon="@drawable/ic_bus"/>
+        <item android:id="@+id/mess"
+            android:title="Mess Menu"
+            android:icon="@drawable/ic_mess"/>
+        <item android:id="@+id/holiday"
+            android:title="Holiday Calendar"
+            android:icon="@drawable/ic_calendar"/>
+        <item android:id="@+id/curriculum"
+            android:title="Curriculum"
+            android:icon="@drawable/ic_curriculum"/>
+    </group>
+    <group android:id="@+id/menu_dev">
+        <item android:id="@+id/dev"
+            android:title="Developers"
+            android:icon="@drawable/ic_developer"/>
+        <item android:id="@+id/help"
+            android:title="Help"
+            android:icon="@drawable/ic_help"/>
+        <item android:id="@+id/bug"
+            android:title="Report a Bug"
+            android:icon="@drawable/ic_bug"/>
+    </group>
+    <group android:id="@+id/menu_logout">
+        <item android:id="@+id/faq"
+            android:title="FAQ"
+            android:icon="@drawable/ic_faq"/>
+        <item android:id="@+id/rateus"
+            android:title="Rate Us"
+            android:icon="@drawable/ic_thumb_up"/>
+        <item android:id="@+id/ccell"
+            android:title="CCell"
+            android:icon="@drawable/ic_info"/>
+        <item android:id="@+id/logout"
+            android:title="Logout"
+            android:icon="@drawable/ic_logout"/>
+    </group>
+</menu>

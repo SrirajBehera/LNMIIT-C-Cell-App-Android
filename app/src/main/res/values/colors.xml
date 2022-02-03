@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#910022</color>
+    <color name="colorPrimaryDark">#910022</color>
+    <color name="colorAccent">#CD0022</color>
+    <color name="white">#FFFFFF</color>
+    <color name="sand">#FAFAFA</color>
+    <color name="verywhite">#d2d2d2</color>
+    <color name="darkwhite">#b3b6b7</color>
+    <color name="lightblack">#615e5e</color>
+    <color name="red">#e74c3c</color>
+    <color name="green">#2AA500</color>
+    <color name="trans">#00000000</color>
+    <color name="trans_back">#1ab3b6b7</color>
+    <color name="black">#000000</color>
+
+</resources>
