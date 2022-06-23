@@ -72,7 +72,7 @@ public class ImportantContact extends Fragment implements Tab1.OnFragmentInterac
         tabLayout = v.findViewById(R.id.tablayout);
         tabLayout.addTab(tabLayout.newTab().setText("Gymkhana"));
         tabLayout.addTab(tabLayout.newTab().setText("Counselling Cell"));
-        tabLayout.addTab(tabLayout.newTab().setText("Administration/Academics"));
+        tabLayout.addTab(tabLayout.newTab().setText("Administration"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         final ViewPager viewPager = v.findViewById(R.id.pager);

@@ -76,12 +76,12 @@ public class Bus extends Fragment {
         }
     }
 
-    Button download;
-
-    ScrollView scroll;
-    WebView web;
-
-    ProgressDialog progressDialog;
+//    Button download;
+//
+//    ScrollView scroll;
+//    WebView web;
+//
+//    ProgressDialog progressDialog;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -89,54 +89,55 @@ public class Bus extends Fragment {
         // Inflate the layout for this fragment
         View v= inflater.inflate(R.layout.fragment_bus, container, false);
 
-        scroll=v.findViewById(R.id.scroll);
-        web=v.findViewById(R.id.web);
+//        scroll=v.findViewById(R.id.scroll);
+//        web=v.findViewById(R.id.web);
+//
+//        if(InternetConnection.checkConnection(getContext()))
+//        {
+//            web.setVisibility(View.VISIBLE);
+//            web.setLayerType(View.LAYER_TYPE_HARDWARE, null);
+//            scroll.setVisibility(View.GONE);
+//
+//            web.getSettings().setJavaScriptEnabled(true);
+//
+//            progressDialog=new ProgressDialog(getContext());
+//            progressDialog.setMessage("Loading...");
+//            progressDialog.setCancelable(false);
+//
+//            progressDialog.show();
+//
+//            web.setWebViewClient(new WebViewClient(){
+//                public boolean shouldOverrideUrlLoading(WebView view, String url) {
+//                    Log.i("nus", "Processing webview url click...");
+//                    view.loadUrl(url);
+//                    return true;
+//                }
+//
+//                public void onPageFinished(WebView view, String url) {
+//                    Log.i("bus", "Finished loading URL: " +url);
+//                    if (progressDialog!=null)
+//                        progressDialog.dismiss();
+//                }
+//
+//                public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+//                    if (progressDialog!=null)
+//                        progressDialog.dismiss();
+//                    Log.e("bus", "Error: " + description);
+//                    Toast.makeText(getContext(), "Oops! Please try again" + description, Toast.LENGTH_SHORT).show();
+//                }
+//            });
 
-        if(InternetConnection.checkConnection(getContext()))
-        {
-            web.setVisibility(View.VISIBLE);
-            web.setLayerType(View.LAYER_TYPE_HARDWARE, null);
-            scroll.setVisibility(View.GONE);
-
-            web.getSettings().setJavaScriptEnabled(true);
-
-            progressDialog=new ProgressDialog(getContext());
-            progressDialog.setMessage("Loading...");
-            progressDialog.setCancelable(false);
-
-            progressDialog.show();
-
-            web.setWebViewClient(new WebViewClient(){
-                public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                    Log.i("nus", "Processing webview url click...");
-                    view.loadUrl(url);
-                    return true;
-                }
-
-                public void onPageFinished(WebView view, String url) {
-                    Log.i("bus", "Finished loading URL: " +url);
-                    if (progressDialog!=null)
-                        progressDialog.dismiss();
-                }
-
-                public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
-                    if (progressDialog!=null)
-                        progressDialog.dismiss();
-                    Log.e("bus", "Error: " + description);
-                    Toast.makeText(getContext(), "Oops! Please try again" + description, Toast.LENGTH_SHORT).show();
-                }
-            });
-
-            web.loadUrl("https://drive.google.com/file/d/1fZpLa3F8PXiRvAW_dnpTAbKKBqwtcsBm/view");
+//            web.loadUrl("https://drive.google.com/file/d/1fZpLa3F8PXiRvAW_dnpTAbKKBqwtcsBm/view");
+//            web.loadUrl();
             //garvit sir drive link https://drive.google.com/file/d/1bolP0GBnAGPVaZpQanfJs1QXpmOx9UMr/view
 
-        }
-        else
-        {
-            web.setVisibility(View.GONE);
-            scroll.setVisibility(View.VISIBLE);
-            Snackbar.make(getActivity().findViewById(android.R.id.content), "You are offline!", Snackbar.LENGTH_LONG).show();
-        }
+//        }
+//        else
+//        {
+//            web.setVisibility(View.GONE);
+//            scroll.setVisibility(View.VISIBLE);
+//            Snackbar.make(getActivity().findViewById(android.R.id.content), "You are offline!", Snackbar.LENGTH_LONG).show();
+//        }
         /*download=v.findViewById(R.id.download);
         download.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -160,13 +161,13 @@ public class Bus extends Fragment {
     }
 
 
-        private void copyFile(InputStream in, OutputStream out) throws IOException {
-            byte[] buffer = new byte[1024];
-            int read;
-            while((read = in.read(buffer)) != -1){
-                out.write(buffer, 0, read);
-            }
-        }
+//        private void copyFile(InputStream in, OutputStream out) throws IOException {
+//            byte[] buffer = new byte[1024];
+//            int read;
+//            while((read = in.read(buffer)) != -1){
+//                out.write(buffer, 0, read);
+//            }
+//        }
 
     /*@Override
     public void onPageChanged(int page, int pageCount) {

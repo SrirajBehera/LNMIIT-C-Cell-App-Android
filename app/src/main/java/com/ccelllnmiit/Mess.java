@@ -71,11 +71,11 @@ public class Mess extends Fragment {
         }
     }
 
-    PhotoView mess_view;
-    WebView web;
-    //User usr;
-
-    ProgressDialog progressDialog;
+//    PhotoView mess_view;
+//    WebView web;
+//    //User usr;
+//
+//    ProgressDialog progressDialog;
 
    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -83,52 +83,52 @@ public class Mess extends Fragment {
         // Inflate the layout for this fragment
         View v= inflater.inflate(R.layout.fragment_mess, container, false);
 
-        mess_view=v.findViewById(R.id.mess_view);
-        web=v.findViewById(R.id.web);
-
-        if(InternetConnection.checkConnection(getContext()))
-        {
-            web.setVisibility(View.VISIBLE);
-            mess_view.setVisibility(View.GONE);
-
-            web.getSettings().setJavaScriptEnabled(true);
-
-            progressDialog=new ProgressDialog(getContext());
-            progressDialog.setMessage("Loading...");
-            progressDialog.setCancelable(false);
-
-            progressDialog.show();
-
-            web.setWebViewClient(new WebViewClient(){
-                public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                    Log.i("mess", "Processing webview url click...");
-                    view.loadUrl(url);
-                    return true;
-                }
-
-                public void onPageFinished(WebView view, String url) {
-                    Log.i("mess", "Finished loading URL: " +url);
-                    if (progressDialog!=null)
-                            progressDialog.dismiss();
-                }
-
-                public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
-                    if (progressDialog!=null)
-                        progressDialog.dismiss();
-                    Log.e("mess", "Error: " + description);
-                    Toast.makeText(getContext(), "Oops! Please try again" + description, Toast.LENGTH_SHORT).show();
-                }
-            });
-
-            web.loadUrl("https://drive.google.com/file/d/1PXhnVexTB7kCIk72UhcsmyaxrNnZhgwT/view");
-        // Garvitsir drive link https://drive.google.com/file/d/1DXTARUg0hXf4I9kvUbUnZp57Q-p_ubtU/view
-        }
-        else
-        {
-            web.setVisibility(View.GONE);
-            mess_view.setVisibility(View.VISIBLE);
-            Snackbar.make(getActivity().findViewById(android.R.id.content), "You are offline!", Snackbar.LENGTH_LONG).show();
-        }
+//        mess_view=v.findViewById(R.id.mess_view);
+//        web=v.findViewById(R.id.web);
+//
+//        if(InternetConnection.checkConnection(getContext()))
+//        {
+//            web.setVisibility(View.VISIBLE);
+//            mess_view.setVisibility(View.GONE);
+//
+//            web.getSettings().setJavaScriptEnabled(true);
+//
+//            progressDialog=new ProgressDialog(getContext());
+//            progressDialog.setMessage("Loading...");
+//            progressDialog.setCancelable(false);
+//
+//            progressDialog.show();
+//
+//            web.setWebViewClient(new WebViewClient(){
+//                public boolean shouldOverrideUrlLoading(WebView view, String url) {
+//                    Log.i("mess", "Processing webview url click...");
+//                    view.loadUrl(url);
+//                    return true;
+//                }
+//
+//                public void onPageFinished(WebView view, String url) {
+//                    Log.i("mess", "Finished loading URL: " +url);
+//                    if (progressDialog!=null)
+//                            progressDialog.dismiss();
+//                }
+//
+//                public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+//                    if (progressDialog!=null)
+//                        progressDialog.dismiss();
+//                    Log.e("mess", "Error: " + description);
+//                    Toast.makeText(getContext(), "Oops! Please try again" + description, Toast.LENGTH_SHORT).show();
+//                }
+//            });
+//
+//            web.loadUrl("https://drive.google.com/file/d/1PXhnVexTB7kCIk72UhcsmyaxrNnZhgwT/view");
+//        // Garvitsir drive link https://drive.google.com/file/d/1DXTARUg0hXf4I9kvUbUnZp57Q-p_ubtU/view
+//        }
+//        else
+//        {
+//            web.setVisibility(View.GONE);
+//            mess_view.setVisibility(View.VISIBLE);
+//            Snackbar.make(getActivity().findViewById(android.R.id.content), "You are offline!", Snackbar.LENGTH_LONG).show();
+//        }
        /*ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(getContext()).build();
        ImageLoader.getInstance().init(config);
        ImageLoader img=ImageLoader.getInstance();

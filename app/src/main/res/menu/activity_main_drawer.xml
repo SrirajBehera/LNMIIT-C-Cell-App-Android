@@ -30,7 +30,7 @@
     </group>
     <group android:id="@+id/menu_dev">
         <item android:id="@+id/dev"
-            android:title="Developers"
+            android:title="Meet Our Developers"
             android:icon="@drawable/ic_developer"/>
         <item android:id="@+id/help"
             android:title="Help"
@@ -41,13 +41,13 @@
     </group>
     <group android:id="@+id/menu_logout">
         <item android:id="@+id/faq"
-            android:title="FAQ"
+            android:title="FAQs"
             android:icon="@drawable/ic_faq"/>
         <item android:id="@+id/rateus"
             android:title="Rate Us"
             android:icon="@drawable/ic_thumb_up"/>
         <item android:id="@+id/ccell"
-            android:title="CCell"
+            android:title="C-Cell"
             android:icon="@drawable/ic_info"/>
         <item android:id="@+id/logout"
             android:title="Logout"

@@ -392,11 +392,13 @@ public class MainActivity extends AppCompatActivity {
                 fclass = FAQ.class;
                 break;
             case R.id.dev:
-                if(dl.isDrawerOpen(nv))
-                    dl.closeDrawer(nv);
-                Intent i=new Intent(MainActivity.this,Dev.class);
-                startActivity(i);
-                return;
+//                if(dl.isDrawerOpen(nv))
+//                    dl.closeDrawer(nv);
+//                Intent i=new Intent(MainActivity.this,Dev.class);
+//                startActivity(i);
+//                return;
+                fclass = Developer.class;
+                break;
             case R.id.logout:
                 flg=2;
                 break;
