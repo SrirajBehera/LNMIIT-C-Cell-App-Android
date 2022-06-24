@@ -10,7 +10,7 @@ android {
         applicationId "com.ccelllnmiit"
         minSdk 24
         targetSdk 31
-        versionCode 16
+        versionCode 17
         versionName "6.5.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
